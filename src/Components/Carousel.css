@@ -1,0 +1,27 @@
+.imgstyle {
+    height: 700px;
+    color: #D3D3D3;
+    font-size: 2.5em;
+    font-style: italic;
+    position: relative;
+  }
+
+.textstyle  {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 3%;
+    text-align: left;
+}   
+
+.buttonstyle  {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    bottom: 0;
+    right: 70%;
+    margin: auto;
+    width: max-content;
+}
