@@ -1,10 +1,25 @@
 import React, { Component } from 'react';
+import fon from '../assets/4.jpg';
+
+const fonStyles = {
+    backgroundImage: `url(${fon})`,
+    
+    height: '1500px',
+    color: '#fff', 
+    maxWidth: '100%',
+    '-webkit-background-size': 'cover', 
+    '-moz-background-size': 'cover', 
+    '-o-background-size': 'cover', 
+    backgroundSize: 'cover', 
+    backgroundAttachment: 'relative',
+}
 
 class Contacts extends Component {
     render() {
         return (
-            <div>
-                <h1 className="mt-5">Contacts</h1>
+            <div style={fonStyles}>
+                <br/>
+                <h3 className="mt-5">Contacts</h3>
             </div>
         );
     }

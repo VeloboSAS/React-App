@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import {
-  Navbar, Container, Nav} 
+import {Navbar, Container, Nav} 
 from "react-bootstrap";
 import logo from "./logo.jpg";
 import {Routes, Route, Link} from 'react-router-dom';
@@ -53,9 +52,8 @@ export default class Header extends Component {
                 <Nav class="btn btn-social-icon btn-vk">
                   <a href="https://vk.com/studiomanicurefs"><i class="fa fa-vk fa_custom " style={vkstyle}></i></a>
                 </Nav>
-                <Nav>
-                  {/* <button href="/contacts" type="button" class="btn btn-secondary">Контакты</button> */}
-                  <a class="btn btn-secondary" href="/contacts" role="button">Контакты</a>
+                <Nav >
+                  <a class="btn btn-outline-secondary"  href="/contacts" role="button">Контакты</a>
                 </Nav>
               </Navbar.Collapse>
             </Container>

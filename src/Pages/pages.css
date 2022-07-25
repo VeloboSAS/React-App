@@ -1,0 +1,12 @@
+.fonStyles {
+    backgroundImage: `url(${fon})`,
+    
+    height: '1500px',
+    color: '#fff', 
+    maxWidth: '100%',
+    '-webkit-background-size': 'cover', 
+    '-moz-background-size': 'cover', 
+    '-o-background-size': 'cover', 
+    backgroundSize: 'cover', 
+    backgroundAttachment: 'relative',
+}

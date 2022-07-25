@@ -16,7 +16,7 @@
     text-align: left;
 }   
 
-.buttonstyle  {
+.btnStyle  {
     position: absolute;
     top: 60%;
     left: 0;
@@ -24,4 +24,6 @@
     right: 70%;
     margin: auto;
     width: max-content;
+
+
 }
