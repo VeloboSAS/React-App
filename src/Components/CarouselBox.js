@@ -18,7 +18,7 @@ export default class CaruselBox extends Component {
             <>
                 <Carousel>    
                     <Carousel.Item class="carousel-item active" className='imgstyle' data-bs-interval="500">
-                        <img  src = {one} alt="FS" />
+                        <img className="min-vw-100" src = {one} alt="FS" />
                         <Carousel.Caption className='textstyle'>
                             <h1>FS | Studio manicure</h1>
                             <p>Эстетика в каждом пальчике</p>
@@ -28,7 +28,7 @@ export default class CaruselBox extends Component {
                         </Carousel.Caption>       
                     </Carousel.Item>
                     <Carousel.Item class="carousel-item" className='imgstyle' data-bs-interval="500">
-                        <img className="d-inline-block w-100" src = {two} alt="FS"/>
+                        <img className="min-vw-100" src = {two} alt="FS"/>
                         <Carousel.Caption className='textstyle'> 
                             <h1>FS | Studio manicure</h1>
                             <p >Эстетика в каждом пальчике</p>
@@ -38,7 +38,7 @@ export default class CaruselBox extends Component {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item class="carousel-item" className='imgstyle' data-bs-interval="500">
-                        <img className="w-100" src = {three} alt="FS"/>
+                        <img className="min-vw-100" src = {three} alt="FS"/>
                         <Carousel.Caption className='textstyle'>
                             <h1 >FS | Studio manicure</h1>
                             <p >Эстетика в каждом пальчике</p>

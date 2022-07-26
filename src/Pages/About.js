@@ -46,7 +46,7 @@ const Styles = styled.div`
     transition: all .3s linear;
   }
     .zoom:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: all .2s linear;
   }
 `
@@ -75,7 +75,6 @@ class About extends Component {
                             <Col>
                                 <Card style={{width: '19rem'}} className="zoom">
                                     <Card.Img  variant='top' src={thirteen}/>   
-                                    {/* <Card.Img  variant='top' src={thirteen} class="img-responsive img-fluid"/>  */}
                                 </Card>
                             </Col>
                             <Col>

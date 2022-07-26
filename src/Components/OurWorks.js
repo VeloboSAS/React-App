@@ -64,67 +64,67 @@ class OurWorks extends Component {
                             </p>
                         </Container>
                         <Styles>
-                            <Row style={{paddingTop: '2rem'}}>
-                                <Col>
+                            <Row style={{paddingTop: '2rem'}} class='row'>
+                                <Col className="col-sm-2">
                                     <Card style={{width: '13rem'}} className="zoom">
                                         <Card.Img   variant='top'  src={twone}/> 
                                     </Card>
 
                                 </Col>
-                                <Col>
-                                    <Card style={{width: '13rem'}}className="zoom">
+                                <Col className="col-sm-2">
+                                    <Card style={{width: '13rem'}} className="zoom">
                                         <Card.Img  variant='top' src={twtwo}/>       
                                     </Card>
                                 </Col>
-                                <Col>
+                                <Col className="col-sm-2">
                                     <Card style={{width: '13rem'}} className="zoom">
                                         <Card.Img  variant='top' src={twthree}/>      
                                     </Card>
                                 </Col>
-                                <Col>
+                                <Col className="col-sm-2">
                                     <Card style={{width: '13rem'}} className="zoom">
                                         <Card.Img   variant='top' src={twfour}/>     
                                     </Card>
                                 </Col>
-                                <Col>
+                                <Col className="col-sm-2">
                                     <Card style={{width: '13rem'}} className="zoom">
                                         <Card.Img   variant='top' src={twfive}/>     
                                     </Card>
                                 </Col>
-                                <Col>
+                                <Col className="col-sm-2">
                                     <Card style={{width: '13rem'}} className="zoom">
                                         <Card.Img   variant='top' src={twsex}/>     
                                     </Card>
                                 </Col>
                             </Row>
-                            <Row style={{paddingTop: '2rem'}}>
-                                <Col>
-                                    <Card style={{width: '12rem'}} className="zoom">
+                            <Row style={{paddingTop: '2rem'}} className="row">
+                                <Col className="col-sm-2">
+                                    <Card style={{width: '13rem'}} className="zoom">
                                         <Card.Img  variant='top' src={twseven}/>   
                                     </Card>
                                 </Col>
-                                <Col>
-                                    <Card style={{width: '12rem'}} className="zoom">
+                                <Col className="col-sm-2">
+                                    <Card style={{width: '13rem'}} className="zoom">
                                         <Card.Img variant='top' src={tweight}/>       
                                     </Card>
                                 </Col>
-                                <Col>
-                                    <Card style={{width: '12rem'}} className="zoom">
+                                <Col className="col-sm-2">
+                                    <Card style={{width: '13rem'}} className="zoom">
                                         <Card.Img variant='top' src={twnine}/>      
                                     </Card>
                                 </Col>
-                                <Col>
-                                    <Card style={{width: '12rem'}} className="zoom">
+                                <Col className="col-sm-2">
+                                    <Card style={{width: '13rem'}} className="zoom">
                                         <Card.Img variant='top' src={thone}/>     
                                     </Card>
                                 </Col>
-                                <Col>
-                                    <Card style={{width: '12rem'}} className="zoom">
+                                <Col className="col-sm-2">
+                                    <Card style={{width: '13rem'}} className="zoom">
                                         <Card.Img variant='top' src={thtwo}/>     
                                     </Card>
                                 </Col>
-                                <Col>
-                                    <Card style={{width: '12rem'}} className="zoom">
+                                <Col className="col-sm-2">
+                                    <Card style={{width: '13rem'}} className="zoom">
                                         <Card.Img variant='top' src={ththree}/>     
                                     </Card>
                                 </Col>
