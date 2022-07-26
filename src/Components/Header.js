@@ -50,7 +50,10 @@ export default class Header extends Component {
                   <Nav.Link> <Link to="/about" > О нас </Link> </Nav.Link>
                 </Nav>
                 <Nav class="btn btn-social-icon btn-vk">
-                  <a href="https://vk.com/studiomanicurefs"><i class="fa fa-vk fa_custom " style={vkstyle}></i></a>
+                  <a href="#"><i class="fa fa-vk fa_custom " style={vkstyle}></i></a>
+                </Nav>
+                <Nav class="btn btn-social-icon btn-instagram">  
+                  <a href="#"><i class="fa fa-instagram fa_custom " style={vkstyle}></i></a>
                 </Nav>
                 <Nav >
                   <a class="btn btn-outline-secondary"  href="/contacts" role="button">Контакты</a>

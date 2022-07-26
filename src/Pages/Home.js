@@ -1,26 +1,19 @@
 import React, { Component } from 'react';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import CarouselBox from '../Components/CarouselBox';
+import Services from './Services';
+import About from './About';
+import Button from 'react-bootstrap/Button';
 import fon from '../assets/4.jpg';
-
-const fonStyles = {
-    backgroundImage: `url(${fon})`,
-    
-    height: '1500px',
-    color: '#fff', 
-    maxWidth: '100%',
-    '-webkit-background-size': 'cover', 
-    '-moz-background-size': 'cover', 
-    '-o-background-size': 'cover', 
-    backgroundSize: 'cover', 
-    backgroundAttachment: 'relative',
-}
 
 class Home extends Component {
     render() {
         return (
-            <div style={fonStyles}>
-                < CarouselBox className="mt-5"/>
-            </div>
+            <>
+                <CarouselBox  className="mt-5"/>
+                <About />
+                <Services/>
+            </>    
         );
     }
 }

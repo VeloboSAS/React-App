@@ -3,13 +3,13 @@ import {Container} from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import one from '../assets/1.jpg';
-import two from '../assets/2.jpeg';
-import three from '../assets/3.jpeg';
+import two from '../assets/2.jpg';
+import three from '../assets/3.jpg';
 import './Carousel.css';
 
 
 const link = (
-    'https://n740216.yclients.com/'
+    '#'
 ); 
 
 export default class CaruselBox extends Component {
@@ -18,7 +18,7 @@ export default class CaruselBox extends Component {
             <>
                 <Carousel>    
                     <Carousel.Item class="carousel-item active" className='imgstyle' data-bs-interval="500">
-                        <img className="d-block w-100 opacity-100" src = {one} alt="FS" />
+                        <img  src = {one} alt="FS" />
                         <Carousel.Caption className='textstyle'>
                             <h1>FS | Studio manicure</h1>
                             <p>Эстетика в каждом пальчике</p>
@@ -28,7 +28,7 @@ export default class CaruselBox extends Component {
                         </Carousel.Caption>       
                     </Carousel.Item>
                     <Carousel.Item class="carousel-item" className='imgstyle' data-bs-interval="500">
-                        <img className="d-block w-100" src = {two} alt="FS"/>
+                        <img className="d-inline-block w-100" src = {two} alt="FS"/>
                         <Carousel.Caption className='textstyle'> 
                             <h1>FS | Studio manicure</h1>
                             <p >Эстетика в каждом пальчике</p>
@@ -38,7 +38,7 @@ export default class CaruselBox extends Component {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item class="carousel-item" className='imgstyle' data-bs-interval="500">
-                        <img className="d-block w-100" src = {three} alt="FS"/>
+                        <img className="w-100" src = {three} alt="FS"/>
                         <Carousel.Caption className='textstyle'>
                             <h1 >FS | Studio manicure</h1>
                             <p >Эстетика в каждом пальчике</p>

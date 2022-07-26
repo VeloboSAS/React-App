@@ -1,31 +1,128 @@
 import React, { Component } from 'react';
-import { Container} from "react-bootstrap";
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 import fon from '../assets/4.jpg';
+import difficult from '../assets/5.jpg';
+import simple from '../assets/6.jpg';
+import correction from '../assets/7.jpg';
+import remove from '../assets/8.jpg';
+import without from '../assets/9.jpg';
+import fpench from '../assets/10.jpg';
+import build from '../assets/11.jpg';
+import mono from '../assets/12.jpg';
+
 
 const fonStyles = {
-    backgroundImage: `url(${fon})`,
-    height: '1500px',
-    color: '#fff', 
-    maxWidth: '100%',
-    '-webkit-background-size': 'cover', 
-    '-moz-background-size': 'cover', 
-    '-o-background-size': 'cover', 
-    backgroundSize: 'cover', 
-    backgroundAttachment: 'relative',
-}
+        background: `url(${fon})`,
+        
+        height: '5500px',
+        color: '#fff', 
+        maxWidth: '100%',
+        '-webkit-background-size': 'cover', 
+        '-moz-background-size': 'cover', 
+        '-o-background-size': 'cover', 
+        backgroundSize: 'cover', 
+        backgroundAttachment: 'relative',
+        paddingTop: '2rem',
+        paddingBottom: '2rem',
+        paddingLeft: '2rem',
+};
 
-
-class Services extends Component {
+export default class Services extends Component {
     render() {
         return (
-                <div style={fonStyles}>
-                    <br/>
-                    <h3 className="mt-5"> Services </h3>
-                </div>
-
+            <>
+                    <Container style={fonStyles}>
+                        <h1 style={{display: 'flex', justifyContent: 'center', paddingTop: '4rem'}}>Наши Услуги</h1>
+                        <Row style={{paddingTop: '3rem'}}>
+                            <Col>
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC'}}>
+                                    <Card.Img variant='top' src={difficult} />
+                                    <Card.Body>
+                                        <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Сложный дизайн</Card.Title>
+                                        <br/>
+                                        <Button style={{display: 'block', margin: '0 auto'}} variant='secondary'>Записаться</Button>
+                                    </Card.Body>    
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC',}}>
+                                    <Card.Img variant='top' src={simple} />
+                                    <Card.Body>
+                                        <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Простой дизайн</Card.Title>
+                                        <br/>
+                                        <Button variant="secondary" style={{display: 'block', margin: '0 auto'}}>Записаться</Button>
+                                    </Card.Body>       
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC',}}>
+                                    <Card.Img variant='top' src={correction} />
+                                    <Card.Body>
+                                        <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Коррекция + окрашивание краской</Card.Title>
+                                        <Button style={{display: 'block', margin: '0 auto'}} variant='secondary'>Записаться</Button>
+                                    </Card.Body>       
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC',}}>
+                                    <Card.Img variant='top' src={remove} />
+                                    <Card.Body>
+                                        <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Снятие покрытия</Card.Title>
+                                        <br/>
+                                        <Button  style={{display: 'block', margin: '0 auto'}} variant='secondary'>Записаться</Button>
+                                    </Card.Body>       
+                                </Card>
+                            </Col>
+                        </Row>
+                        <Row style={{paddingTop: '2rem'}}>
+                            <Col>
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC',}}>
+                                    <Card.Img variant='top' src={without} />
+                                    <Card.Body>
+                                        <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Маникюр без покрытия</Card.Title>
+                                        <br/>
+                                        <Button style={{display: 'block', margin: '0 auto'}} variant='secondary'>Записаться</Button>
+                                    </Card.Body>    
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC',}}>
+                                    <Card.Img variant='top' src={fpench} />
+                                    <Card.Body>
+                                        <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Маникюр с покрытием + френч/градиент</Card.Title>
+                                        <Button style={{display: 'block', margin: '0 auto'}} variant='secondary'>Записаться</Button>
+                                    </Card.Body>       
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC',}}>
+                                    <Card.Img variant='top' src={build} />
+                                    <Card.Body>
+                                        <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Наращивание ногтей</Card.Title>
+                                        <br/>
+                                        <Button style={{display: 'block', margin: '0 auto'}} variant='secondary'>Записаться</Button>
+                                    </Card.Body>       
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC',}}>
+                                    <Card.Img variant='top' src={mono} />
+                                    <Card.Body>
+                                        <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Маникюр с однотонным покрытием</Card.Title>
+                                        <Button style={{display: 'block', margin: '0 auto'}} variant='secondary'>Записаться</Button>
+                                    </Card.Body>       
+                                </Card>
+                            </Col>
+                        </Row>
+                    </Container> 
+                </>      
         );
     }
 }
 
-export default Services;
+
+
+
+
 
