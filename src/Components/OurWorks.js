@@ -67,13 +67,13 @@ class OurWorks extends Component {
                             <Row style={{paddingTop: '2rem'}} class='row'>
                                 <Col className="col-sm-2">
                                     <Card style={{width: '13rem'}} className="zoom">
-                                        <Card.Img   variant='top'  src={twone}/> 
+                                        <Card.Img  variant='top'  src={twone}/> 
                                     </Card>
 
                                 </Col>
                                 <Col className="col-sm-2">
                                     <Card style={{width: '13rem'}} className="zoom">
-                                        <Card.Img  variant='top' src={twtwo}/>       
+                                        <Card.Img variant='top' src={twtwo}/>       
                                     </Card>
                                 </Col>
                                 <Col className="col-sm-2">
@@ -88,12 +88,12 @@ class OurWorks extends Component {
                                 </Col>
                                 <Col className="col-sm-2">
                                     <Card style={{width: '13rem'}} className="zoom">
-                                        <Card.Img   variant='top' src={twfive}/>     
+                                        <Card.Img  variant='top' src={twfive}/>     
                                     </Card>
                                 </Col>
                                 <Col className="col-sm-2">
                                     <Card style={{width: '13rem'}} className="zoom">
-                                        <Card.Img   variant='top' src={twsex}/>     
+                                        <Card.Img  variant='top' src={twsex}/>     
                                     </Card>
                                 </Col>
                             </Row>

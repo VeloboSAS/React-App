@@ -15,7 +15,7 @@ import mono from '../assets/12.jpg';
 const fonStyles = {
         background: `url(${fon})`,
         
-        height: '5500px',
+        height: 'auto',
         color: '#fff', 
         maxWidth: '100%',
         '-webkit-background-size': 'cover', 
