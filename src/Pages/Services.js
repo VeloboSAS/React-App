@@ -37,7 +37,7 @@ export default class Services extends Component {
                         <Row style={{paddingTop: '3rem'}}>
                             <Col>
                                 <Card style={{width: '18rem', backgroundColor: '#DCDCDC'}}>
-                                    <Card.Img variant='top' src={difficult} />
+                                    <Card.Img className="rounded-4" variant='top' src={difficult} />
                                     <Card.Body>
                                         <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Сложный дизайн</Card.Title>
                                         <br/>
