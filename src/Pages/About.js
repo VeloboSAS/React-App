@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import OurWorks from '../Components/OurWorks';
+// import OurWorks from '../Components/OurWorks';
+import Gallery from '../Components/Gallery';
 import styled from 'styled-components';
 import fon from '../assets/41.jpg';
 import thirteen from '../assets/13.jpeg';
@@ -114,7 +115,8 @@ class About extends Component {
                         </Container>
                     </Styles>
                 </Container>
-                    <OurWorks />
+                    {/* <OurWorks /> */}
+                    <Gallery />
             </>
                       
         );

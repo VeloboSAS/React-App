@@ -80,7 +80,7 @@ class OurWorks extends Component {
                             <Row style={{paddingTop: '2rem'}} class='row'>
                                     <Col className="col-6 col-lg-2">
                                         <Card  className="zoom img-fluid">
-                                            <Card.Img className="rounded-4" variant='top'  src={twone}/> 
+                                            <Card.Img variant='top'  src={twone}/> 
                                         </Card>
 
                                     </Col>
