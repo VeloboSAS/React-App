@@ -68,7 +68,7 @@ class About extends Component {
                     </Container>
                     <Styles>
                     <Container className="container-fluid">
-                            <Row style={{paddingTop: '2rem'}}>
+                            <Row style={{paddingTop: '4rem'}}>
                                 <Col className="col-6 col-lg-3">
                                     <Card className="zoom img-fluid">
                                         <Card.Img  variant='top' src={thirteen}/>   

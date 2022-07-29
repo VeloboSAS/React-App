@@ -34,10 +34,10 @@ export default class Services extends Component {
             <>
                     <Container style={fonStyles}>
                         <h1 style={{display: 'flex', justifyContent: 'center', paddingTop: '4rem'}}>Наши Услуги</h1>
-                        <Row style={{paddingTop: '3rem'}}>
-                            <Col>
-                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC'}}>
-                                    <Card.Img className="rounded-4" variant='top' src={difficult} />
+                        <Row style={{paddingTop: '3rem'}} >
+                            <Col className="col-6 col-md-3">
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC', borderRadius: '10%'}} >
+                                    <Card.Img  src={difficult} style={{borderRadius: '10% 10% 0% 0%'}} />
                                     <Card.Body>
                                         <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Сложный дизайн</Card.Title>
                                         <br/>
@@ -45,9 +45,9 @@ export default class Services extends Component {
                                     </Card.Body>    
                                 </Card>
                             </Col>
-                            <Col>
-                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC',}}>
-                                    <Card.Img variant='top' src={simple} />
+                            <Col className="col-6 col-md-3">
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC', borderRadius: '10%'}}>
+                                    <Card.Img variant='top' src={simple} style={{borderRadius: '10% 10% 0% 0%'}}/>
                                     <Card.Body>
                                         <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Простой дизайн</Card.Title>
                                         <br/>
@@ -55,18 +55,18 @@ export default class Services extends Component {
                                     </Card.Body>       
                                 </Card>
                             </Col>
-                            <Col>
-                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC',}}>
-                                    <Card.Img variant='top' src={correction} />
+                            <Col className="col-6 col-md-3">
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC', borderRadius: '10%'}}>
+                                    <Card.Img variant='top' src={correction} style={{borderRadius: '10% 10% 0% 0%'}}/>
                                     <Card.Body>
-                                        <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Коррекция + окрашивание краской</Card.Title>
+                                        <Card.Title style={{color: 'black', textAlight: 'center'}}>Коррекция + окрашивание краской</Card.Title>
                                         <Button style={{display: 'block', margin: '0 auto'}} variant='secondary'>Записаться</Button>
                                     </Card.Body>       
                                 </Card>
                             </Col>
-                            <Col>
-                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC',}}>
-                                    <Card.Img variant='top' src={remove} />
+                            <Col className="col-6 col-md-3">
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC', borderRadius: '10%'}}>
+                                    <Card.Img variant='top' src={remove} style={{borderRadius: '10% 10% 0% 0%'}}/>
                                     <Card.Body>
                                         <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Снятие покрытия</Card.Title>
                                         <br/>
@@ -76,9 +76,9 @@ export default class Services extends Component {
                             </Col>
                         </Row>
                         <Row style={{paddingTop: '2rem'}}>
-                            <Col>
-                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC',}}>
-                                    <Card.Img variant='top' src={without} />
+                            <Col className="col-6 col-md-3">
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC', borderRadius: '10%'}}>
+                                    <Card.Img variant='top' src={without} style={{borderRadius: '10% 10% 0% 0%'}}/>
                                     <Card.Body>
                                         <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Маникюр без покрытия</Card.Title>
                                         <br/>
@@ -86,18 +86,18 @@ export default class Services extends Component {
                                     </Card.Body>    
                                 </Card>
                             </Col>
-                            <Col>
-                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC',}}>
-                                    <Card.Img variant='top' src={fpench} />
+                            <Col className="col-6 col-md-3">
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC', borderRadius: '10%'}}>
+                                    <Card.Img variant='top' src={fpench}style={{borderRadius: '10% 10% 0% 0%'}} />
                                     <Card.Body>
-                                        <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Маникюр с покрытием + френч/градиент</Card.Title>
+                                        <Card.Title style={{color: 'black', textAlight: 'center'}}>Маникюр с покрытием + френч/градиент</Card.Title>
                                         <Button style={{display: 'block', margin: '0 auto'}} variant='secondary'>Записаться</Button>
                                     </Card.Body>       
                                 </Card>
                             </Col>
-                            <Col>
-                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC',}}>
-                                    <Card.Img variant='top' src={build} />
+                            <Col className="col-6 col-md-3">
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC', borderRadius: '10%'}}>
+                                    <Card.Img variant='top' src={build} style={{borderRadius: '10% 10% 0% 0%'}}/>
                                     <Card.Body>
                                         <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Наращивание ногтей</Card.Title>
                                         <br/>
@@ -105,9 +105,9 @@ export default class Services extends Component {
                                     </Card.Body>       
                                 </Card>
                             </Col>
-                            <Col>
-                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC',}}>
-                                    <Card.Img variant='top' src={mono} />
+                            <Col className="col-6 col-md-3">
+                                <Card style={{width: '18rem', backgroundColor: '#DCDCDC', borderRadius: '10%'}}>
+                                    <Card.Img variant='top' src={mono} style={{borderRadius: '10% 10% 0% 0%'}}/>
                                     <Card.Body>
                                         <Card.Title style={{color: 'black', display: 'flex', justifyContent: 'center'}}>Маникюр с однотонным покрытием</Card.Title>
                                         <Button style={{display: 'block', margin: '0 auto'}} variant='secondary'>Записаться</Button>

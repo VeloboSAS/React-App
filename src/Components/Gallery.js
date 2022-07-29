@@ -106,9 +106,9 @@ return (
                     <p>
                     <Container className="container-fluid">
                         <Row style={{paddingTop: '2rem'}} class='row'>
-                            <Col className="col-6 col-md-2">
-                                <Card  data-fancybox="gallery" className="zoom" href={img1}>
-                                    <Card.Img src={img1sm}/> 
+                            <Col className="col-6 col-md-2" >
+                                <Card  data-fancybox="gallery"   className="zoom" href={img1}>
+                                    <Card.Img  src={img1sm}/> 
                                 </Card>
                             </Col>
                             <Col className="col-6 col-md-2">
