@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { YMaps, Map, Placemark } from 'react-yandex-maps';
+import { YMaps, Map, Placemark, FullscreenControl, TypeSelector, ZoomControl } from 'react-yandex-maps';
 import { Container, Row, Col} from 'react-bootstrap';
 import fon from '../assets/4.jpg';
 
@@ -18,25 +18,28 @@ const fonStyles = {
 
 }
 
-
-// const mapState = { center: [55.76, 37.64], zoom: 10 };
-
-
 class ContactMap extends Component {
     render () {
         return (
-            <Container style={fonStyles}>
+            <Container style={fonStyles} >
                  <Row style={{paddingTop: '6rem'}} class='row'>
-                     <Col className="col-6 col-md-4" >
+                     <Col className="col-md-4" >
                          <div>
                             <h1>
                                  Контакты
                             </h1>
+                            <p>
+                            Ярославль, ул.Спартаковская, д.25
+                            Время работы: ежедневно с 10.00 до 20.00
+
+
+                            </p>
                         </div>    
-                    </Col>  
-                    <Col className="col-6 col-md-8" > 
-                        <YMaps style={{widht: '700px', heigth: 'auto'}}>
-                            <Map  state={{ center: [57.72246759681061,39.824911271890244], zoom: 17 }}>
+                    </Col>   
+                     <Col className="col-md-8" > 
+                     <Container>
+                        <YMaps >
+                            <Map style={{width: '100%', height: '400px'}}  state={{ center: [57.72246759681061,39.824911271890244], zoom: 17 }}>
                                 <Placemark
                                     geometry={[57.72246759681061,39.824911271890244]
                                     }
@@ -51,9 +54,13 @@ class ContactMap extends Component {
                                     // iconImageOffset: [-3, -42]
                                     // }}
                                 />
+                                <FullscreenControl options={{float: 'left'}}/>
+                                <TypeSelector options={{float: 'right'}}/>
+                                <ZoomControl options={{float: 'left'}}/>
 
                             </Map>
                         </YMaps>
+                    </Container>
                     </Col> 
                 </Row> 
             </Container>              
