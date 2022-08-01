@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-// import OurWorks from '../Components/OurWorks';
 import Gallery from '../Components/Gallery';
 import styled from 'styled-components';
 import fon from '../assets/41.jpg';
@@ -57,13 +56,13 @@ class About extends Component {
                     <Container style={{display: 'flex', textAlign: 'center', paddingLeft: '2rem', paddingTop: '4rem'}}>
                         <p style={{fontSize: '1.5em',fontStyle: 'italic', color: '#D3D3D3'}}>
                         FS | Studio manicure- это новая студия маникюра, где ты получишь не только качественную услугу,
-                        но и настоящий relax🖤
+                        но и настоящий relax ❤
 
                         ▪️ Мы за стиль и творчество, за качество и безопасность
                         ▪️ У нас огромный выбор дизайнов и цветов
                         ▪️ Мы любим креатив и воплотим любую идею.
 
-                        От нас уходят красивыми и счастливыми🖤
+                        От нас уходят красивыми и счастливыми ❤
                         </p>
                     </Container>
                     <Styles>

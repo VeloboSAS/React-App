@@ -9,6 +9,7 @@ import Services  from '../Pages/Services';
 import Feedback  from '../Pages/Feedback';
 import About  from '../Pages/About';
 import Contacts  from '../Pages/Contacts';
+import '../Pages/pages.css'
 
 
 const Styles = styled.div`
@@ -19,10 +20,6 @@ const Styles = styled.div`
       }
     }
 `
-const vkstyle = {
-    color: '#D3D3D3',
-
-}
 
 export default class Header extends Component {
   render() {
@@ -43,20 +40,20 @@ export default class Header extends Component {
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mx-auto mt-2 mt-lg-0 fs-5" >
-                  <Nav.Link> <Link to="/" > Главная </Link> </Nav.Link>
-                  <Nav.Link> <Link to="/services" > Услуги </Link> </Nav.Link>
-                  <Nav.Link> <Link to="/feedback" > Отзывы </Link> </Nav.Link>
-                  <Nav.Link> <Link to="/about" > О нас </Link> </Nav.Link>
-                </Nav>
-                <Nav class="btn btn-social-icon btn-vk">
-                  <a href="#"><i class="fa fa-vk fa_custom " style={vkstyle}></i></a>
+                  <Nav className="mx-auto mt-2 mt-lg-0 fs-5" >
+                    <Nav.Link> <Link to="/" > Главная </Link> </Nav.Link>
+                    <Nav.Link> <Link to="/services" > Услуги </Link> </Nav.Link>
+                    <Nav.Link> <Link to="/feedback" > Отзывы </Link> </Nav.Link>
+                    <Nav.Link> <Link to="/about" > О нас </Link> </Nav.Link>
+                  </Nav>
+                <Nav class="btn btn-block btn-social btn-vk">
+                    <a href="#"><i class="fa fa-vk fa_custom " ></i></a>
                 </Nav>
                 <Nav class="btn btn-social-icon btn-instagram">  
-                  <a href="#"><i class="fa fa-instagram fa_custom " style={vkstyle}></i></a>
+                    <a href="#"><i class="fa fa-instagram fa_custom " ></i></a>
                 </Nav>
-                <Nav >
-                  <a class="btn btn-outline-secondary"  href="/contacts" role="button">Контакты</a>
+                <Nav style={{paddingLeft: '2rem'}}>
+                  <a class="btn btn-outline-secondary"href="/contacts" role="button">Контакты</a>
                 </Nav>
               </Navbar.Collapse>
             </Container>
