@@ -28,11 +28,11 @@ class ContactMap extends Component {
                             <div>
                                 <h1>Контакты</h1>
                                 <p style={{fontSize: '1.3em'}}>
-                                Ярославль, ул.Спартаковская, д.25
+                                Ярославль, ул.Спартаковская, 
                                 <br/>
                                 Время работы: ежедневно с 10.00 до 20.00
                                 <br/>
-                                Тел. 8(961)025-07-77
+                                Тел. 8
                                 </p>
                                 <div style={{paddingTop: '2rem'}}>
                                     <div class="social vk">
