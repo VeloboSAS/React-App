@@ -116,8 +116,7 @@ class About extends Component {
                 </Container>
                     {/* <OurWorks /> */}
                     <Gallery />
-            </>
-                      
+            </>          
         );
     }
 }

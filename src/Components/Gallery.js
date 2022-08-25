@@ -105,7 +105,7 @@ return (
                 <Fancybox>
                     <p>
                     <Container className="container-fluid">
-                        <Row style={{paddingTop: '2rem'}} class='row'>
+                        <Row style={{paddingTop: '2rem'}} className='row'>
                             <Col className="col-6 col-md-2" >
                                 <Card  data-fancybox="gallery"   className="zoom" href={img1}>
                                     <Card.Img  src={img1sm}/> 

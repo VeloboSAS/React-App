@@ -32,7 +32,7 @@ class ContactMap extends Component {
                                 <br/>
                                 Время работы: ежедневно с 10.00 до 20.00
                                 <br/>
-                                Тел. 8
+                                Тел. 8(888)8888888
                                 </p>
                                 <div style={{paddingTop: '2rem'}}>
                                     <div class="social vk">
