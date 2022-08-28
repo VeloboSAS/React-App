@@ -1,0 +1,19 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.row {
+    padding-top: 3rem;
+}
+
+.card {
+    width: 12rem;
+    background-color: #DCDCDC;
+    border-radius: 8%;
+}
+
+Card.Img {
+    border-radius: 10% 10% 0% 0%;
+}

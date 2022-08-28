@@ -13,8 +13,8 @@ class Home extends Component {
             <>
                 <CarouselBox  className="mt-5"/>
                 <About />
-                <Services/>
-                <Contacts/>
+                <Services />
+                <Contacts />
             </>    
         );
     }
