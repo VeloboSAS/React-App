@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Card, Row, Col } from 'react-bootstrap';
 import Gallery from '../Components/Gallery';
 import styled from 'styled-components';
 import fon from '../assets/41.jpg';
@@ -35,38 +35,36 @@ const fonStyles = {
 
 const Styles = styled.div`
     .zoom {
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     // overflow: hidden;
-    // transition: 1s;
-    transition: all .3s linear;
+    // transition: 4s;
+    transition: all .4s linear;
   }
     .zoom:hover img {
-    transform: scale(1.15);
-    transition: all .2s linear;
+    transform: scale(1.05);
+    transition: all .4s linear;
   }
 `
-
-
 class About extends Component {
     render() {
         return (
             <>
-                <Container style={fonStyles} className="img-responsive">
+                <Container style={fonStyles}>
                     <h1 style={{display: 'flex', justifyContent: 'center', paddingTop: '4rem', color: '#D3D3D3'}}>Студия маникюра</h1>
                     <Container style={{display: 'flex', textAlign: 'center', paddingLeft: '2rem', paddingTop: '4rem'}}>
                         <p style={{fontSize: '1.5em',fontStyle: 'italic', color: '#D3D3D3'}}>
-                        FS | Studio manicure- это новая студия маникюра, где ты получишь не только качественную услугу,
-                        но и настоящий relax ❤
+                            FS | Studio manicure- это новая студия маникюра, где ты получишь не только качественную услугу,
+                            но и настоящий relax ❤
 
-                        ▪️ Мы за стиль и творчество, за качество и безопасность
-                        ▪️ У нас огромный выбор дизайнов и цветов
-                        ▪️ Мы любим креатив и воплотим любую идею.
+                            ▪️ Мы за стиль и творчество, за качество и безопасность
+                            ▪️ У нас огромный выбор дизайнов и цветов
+                            ▪️ Мы любим креатив и воплотим любую идею.
 
-                        От нас уходят красивыми и счастливыми ❤
+                            От нас уходят красивыми и счастливыми ❤
                         </p>
                     </Container>
                     <Styles>
-                    <Container className="container-fluid">
+                        <Container className="container-fluid">
                             <Row style={{paddingTop: '4rem'}}>
                                 <Col className="col-6 col-lg-3">
                                     <Card className="zoom img-fluid">
@@ -111,7 +109,7 @@ class About extends Component {
                                     </Card>
                                 </Col>
                             </Row>
-                        </Container>
+                         </Container>    
                     </Styles>
                 </Container>
                 <Gallery />

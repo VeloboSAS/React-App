@@ -8,4 +8,5 @@ div.zoom  {
 div.zoom:hover {
          transform: scale(1.02);
          transition: all .2s linear;
+         cursor: pointer;
        }

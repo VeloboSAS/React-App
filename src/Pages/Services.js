@@ -20,6 +20,7 @@ const fonStyles = {
 
 
 const Services = () => {
+
     return (
 
             <div className="container-fluid" style={fonStyles}>
@@ -28,7 +29,7 @@ const Services = () => {
                     <div className="row" style={{paddingTop: '2rem'}}>
                         {data.products.map((item, index) => {
                             return (
-                                <Cards img={item.img} title={item.title} key={index}/>
+                                <Cards img={item.img} title={item.title} key={index} />
                             )
                         })
                     }

@@ -9,7 +9,7 @@ import './Carousel.css';
 
 
 const link = (
-    '#'
+    'https://n740216.yclients.com/'
 ); 
 
 export default class CaruselBox extends Component {
