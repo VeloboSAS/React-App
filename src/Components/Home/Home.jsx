@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import CarouselBox from '../Components/CarouselBox';
-import Services from '../Components/Services/Services';
-import About from './About';
-import Contacts from './Contacts';
-import Button from 'react-bootstrap/Button';
-import fon from '../assets/4.jpg';
+import CarouselBox from '../CarouselBox/CarouselBox';
+import Services from '../Services/Services';
+import Pedicure from '../Services/ServicesPages/Pedicure';
+import About from '../About/About';
+import Contacts from '../Contacts/Contacts';
+
 
 class Home extends Component {
     render() {
@@ -14,6 +13,7 @@ class Home extends Component {
                 <CarouselBox  className="mt-5"/>
                 <About />
                 <Services />
+                <Pedicure />
                 <Contacts />
             </>    
         );

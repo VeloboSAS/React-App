@@ -1,56 +1,34 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container, Card, Row, Col } from 'react-bootstrap';
-import Gallery from '../Components/Gallery';
 import styled from 'styled-components';
-import fon from '../assets/41.jpg';
-import thirteen from '../assets/13.jpeg';
-import fourteen from '../assets/14.jpeg';
-import fiveteen from '../assets/15.jpeg';
-import sexteen from '../assets/16.jpeg';
-import seventeen from '../assets/17.jpeg';
-import eighteen from '../assets/18.jpeg';
-import nineteen from '../assets/19.jpeg';
-import tventy from '../assets/20.jpeg';
-
-
-
-const fonStyles = {
-    background: `url(${fon})`,
-    
-    height: 'auto',
-    color: '#fff', 
-    maxWidth: '100%',
-    '-webkit-background-size': 'cover', 
-    '-moz-background-size': 'cover', 
-    '-o-background-size': 'cover', 
-    backgroundSize: 'cover', 
-    backgroundAttachment: 'relative',
-    paddingTop: '2rem',
-    paddingBottom: '2rem',
-    paddingLeft: '2rem',
-    paddingRight: '2rem',
-
-};
+import thirteen from '../../../assets/Office/13.jpeg';
+import fourteen from '../../../assets/Office/14.jpeg';
+import fiveteen from '../../../assets/Office/15.jpeg';
+import sexteen from '../../../assets/Office/16.jpeg';
+import seventeen from '../../../assets/Office/17.jpeg';
+import eighteen from '../../../assets/Office/18.jpeg';
+import nineteen from '../../../assets/Office/19.jpeg';
+import tventy from '../../../assets/Office/20.jpeg';
+import c from './Office.module.css';
 
 
 const Styles = styled.div`
     .zoom {
-    border: 2px solid #fff;
-    // overflow: hidden;
-    // transition: 4s;
-    transition: all .4s linear;
+    border: 1px solid #fff;
+    overflow: hidden;
+    transition: 1s;
+    transition: all .3s linear;
   }
     .zoom:hover img {
     transform: scale(1.05);
-    transition: all .4s linear;
+    transition: all .2s linear;
   }
 `
-class About extends Component {
-    render() {
+const Office = () => {
         return (
             <>
-                <Container style={fonStyles}>
-                    <h1 style={{display: 'flex', justifyContent: 'center', paddingTop: '4rem', color: '#D3D3D3'}}>Студия маникюра</h1>
+                <Container>
+                    <h1 className={c.title}>Студия маникюра</h1>
                     <Container style={{display: 'flex', textAlign: 'center', paddingLeft: '2rem', paddingTop: '4rem'}}>
                         <p style={{fontSize: '1.5em',fontStyle: 'italic', color: '#D3D3D3'}}>
                             FS | Studio manicure- это новая студия маникюра, где ты получишь не только качественную услугу,
@@ -112,10 +90,9 @@ class About extends Component {
                          </Container>    
                     </Styles>
                 </Container>
-                <Gallery />
             </>          
         );
     }
-}
 
-export default About;
+
+export default Office;

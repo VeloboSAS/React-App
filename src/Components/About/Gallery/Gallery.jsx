@@ -1,25 +1,10 @@
 import React, { useEffect } from "react";
-import Fancybox from "./Fancybox.js";
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import Fancybox from "./Fancybox/Fancybox.jsx";
 import styled from 'styled-components';
-import fon from '../assets/41.jpg';
-import Images from '../Components/Images'
-import dataImg from '../Components/Data/DataImg'
+import Images from './Images';
+import dataImg from '../../Data/DataImg';
+import c from './Gallery.module.css';
 
-
-const fonStyles = {
-    background: `url(${fon})`,
-    height: 'auto',
-    color: '#fff', 
-    maxWidth: '100%',
-    '-webkit-background-size': 'cover', 
-    '-moz-background-size': 'cover', 
-    '-o-background-size': 'cover', 
-    backgroundSize: 'cover', 
-    backgroundAttachment: 'relative',
-    paddingTop: '2rem',
-    paddingBottom: '2rem',
-};
 
 const Styles = styled.div`
     .zoom {
@@ -34,19 +19,19 @@ const Styles = styled.div`
   }
 `
 
-export default function Gallery() {
+const Gallery = () => {
 return (
     <>       
-        <Container style={fonStyles}>
-            <h1 style={{display: 'flex', justifyContent: 'center', paddingTop: '4rem', color: '#D3D3D3'}}>Наши работы</h1>
-            <Container style={{display: 'flex', textAlign: 'center', paddingLeft: '2rem', paddingTop: '4rem'}}>
+        <div>
+            <h1 className={c.title}>Наши работы</h1>
+            <div className={c.content}>
                 <p style={{fontSize: '1.8em',fontStyle: 'italic', color: '#D3D3D3'}}>
                     У нас работают талантливые  мастера, которые предложат готовые варианты маникюра или реализуют ваши идеи
                 </p>
-            </Container>
+            </div>
             <Styles>
                 <Fancybox>
-                    <div className="container-fluid" style={fonStyles}>
+                    <div className="container-fluid">
                         <div className="container py-5">
                             <div className="row" style={{paddingTop: '2rem'}}>
                                 {dataImg.products.map((item, index) => {
@@ -60,7 +45,8 @@ return (
                     </div>
                 </Fancybox>
             </Styles>    
-        </Container>
+        </div>
     </>    
 );
 }
+export default Gallery;

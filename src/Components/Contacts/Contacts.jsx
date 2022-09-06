@@ -1,29 +1,13 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { YMaps, Map, Placemark, FullscreenControl, TypeSelector, ZoomControl } from 'react-yandex-maps';
 import { Container, Row, Col} from 'react-bootstrap';
-import fon from '../assets/4.jpg';
-import './pages.css'
-
-const fonStyles = {
-    backgroundImage: `url(${fon})`,
-    
-    height: 'auto',
-    color: '#fff', 
-    maxWidth: '100%',
-    '-webkit-background-size': 'cover', 
-    '-moz-background-size': 'cover', 
-    '-o-background-size': 'cover', 
-    backgroundSize: 'cover', 
-    backgroundAttachment: 'relative',
-
-}
+import c from './Contacts.module.css';
 
 class ContactMap extends Component {
     render () {
         return (
-                <Container style={fonStyles} >
-                    <Row style={{paddingTop: '8rem', paddingBottom: '2rem',}} class='row'>
+                <Container>
+                    <Row style={{paddingTop: '8rem', paddingBottom: '2rem',}} className="row">
                         <Col className="col-md-4" style={{padding: '2rem'}}>
                             <div>
                                 <h1>Контакты</h1>
@@ -35,12 +19,12 @@ class ContactMap extends Component {
                                 Тел. 8(888)8888888
                                 </p>
                                 <div style={{paddingTop: '2rem'}}>
-                                    <div class="social vk">
+                                    <div className={c.social.vk}>
                                         <a href="#" target="_blank"><i class="fa fa-vk fa"></i></a>    
                                     </div>
-                                    <div class="social instagram">
+                                    {/* <div className={c.social.instagram}>
                                         <a href="#" target="_blank"><i class="fa fa-instagram fa"></i></a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>    
                         </Col>   

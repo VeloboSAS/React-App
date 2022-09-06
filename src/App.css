@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  background-image: url('fon.jpg');
+  height: auto;
+  color: #fff; 
+  max-width: 100%;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-attachment: relative;
 }
 
 .App-logo {

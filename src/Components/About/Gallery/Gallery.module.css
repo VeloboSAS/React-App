@@ -1,0 +1,16 @@
+.title {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    color: white;
+  }
+
+.content {
+  display: flex;
+  text-align: center;
+  padding-left: 4rem;
+  padding-top: 4rem;
+  padding-right: 4rem;
+}  
+
+  
