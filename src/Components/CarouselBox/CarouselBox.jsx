@@ -11,7 +11,7 @@ const link = (
     'https://n740216.yclients.com/'
 ); 
 
-const CarouselBox = () => {
+const CarouselBox = (props) => {
         return (
             <>
                 <Carousel>    

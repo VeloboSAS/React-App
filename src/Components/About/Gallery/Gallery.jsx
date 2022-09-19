@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React  from "react";
 import Fancybox from "./Fancybox/Fancybox.jsx";
+import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import Images from './Images';
 import dataImg from '../../Data/DataImg';
@@ -22,13 +23,14 @@ const Styles = styled.div`
 const Gallery = () => {
 return (
     <>       
-        <div>
+        <Container >
             <h1 className={c.title}>Наши работы</h1>
-            <div className={c.content}>
-                <p style={{fontSize: '1.8em',fontStyle: 'italic', color: '#D3D3D3'}}>
+            <Container className={c.content}> 
+
+                <p className={c.desc}>
                     У нас работают талантливые  мастера, которые предложат готовые варианты маникюра или реализуют ваши идеи
                 </p>
-            </div>
+            </Container>
             <Styles>
                 <Fancybox>
                     <div className="container-fluid">
@@ -45,7 +47,7 @@ return (
                     </div>
                 </Fancybox>
             </Styles>    
-        </div>
+        </Container>
     </>    
 );
 }

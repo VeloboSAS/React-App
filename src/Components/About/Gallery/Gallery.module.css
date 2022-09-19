@@ -1,7 +1,7 @@
 .title {
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 6rem;
     color: white;
   }
 
@@ -13,4 +13,8 @@
   padding-right: 4rem;
 }  
 
-  
+.desc {
+  font-size: 1.8em;
+  font-style: italic;
+  color: #D3D3D3;
+}  

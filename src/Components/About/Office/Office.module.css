@@ -11,4 +11,10 @@
   padding-left: 4rem;
   padding-top: 4rem;
   padding-right: 4rem;
+} 
+
+.desc {
+  font-size: 1.8em;
+  font-kerning: italic;
+  color: #D3D3D3;
 }  

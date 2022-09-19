@@ -2,9 +2,8 @@ import React, {useRef} from 'react'
 import { useIntersection } from 'react-use'
 import gsap from 'gsap'
 import './Services.css'
-import fon from '../../assets/4.jpg';
 import {Service} from './Service'
-
+import { Container, Row, Col } from 'react-bootstrap';
 import difficult from '../../assets/5.jpg';
 import simple from '../../assets/6.jpg';
 import correction from '../../assets/7.jpg';
@@ -17,7 +16,7 @@ import pedicure from '../../assets/pedicure.jpg';
 import eyelash from '../../assets/eyelash.jpg';
 
 
-function Services() {
+const Services = (props) => {
 
 	const sectionRef = useRef(null)
 
@@ -65,26 +64,36 @@ function Services() {
 
 		]
 	}
+
+
+	// let ServicesElement = {props.state.services.map((item, i) => 
+	// 		<Service img={item.props.serviceImg} name={item.serviceName} price={item.servicePrice} key={i} />
+	// )}
+
+
 	return (
-		<section id="services" className="services" style={{background: `url(${fon})`}}>
-			<div className="container">
-				<div className="row">
-					<div className="col">
+		<section id="services" className="services" >
+			<Container className="container">
+				<Row className="row">
+					<Col className="col">
 						<h1 className="services__title" > Наши Услуги</h1>
 						<div className="services__box" ref={sectionRef}>
-							{
-								state.services.map((item, i) => {
-									return(
-										<Service img={item.serviceImg} name={item.serviceName} price={item.servicePrice} key={i} />
-									)
-								})
-							}
+						{
+							state.services.map((item, i) => {
+							return(
+							<Service img={item.serviceImg} name={item.serviceName} price={item.servicePrice} key={i} />
+							)
+							})
+}
+{/* 
+							<ServicesElement /> */}
 						</div>
-					</div>
-				</div>
-			</div>
+					</Col>
+				</Row>
+			</Container>
 		</section>
 	)
 }
 
 export default Services;
+

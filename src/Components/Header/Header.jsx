@@ -2,13 +2,8 @@ import React, { Component } from "react";
 import {Navbar, Container, Nav} 
 from "react-bootstrap";
 import logo from "../../Components/logo.jpg";
-import {Routes, Route, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import styled from 'styled-components';
-import Home  from '../Home/Home';
-import Services  from '../Services/Services';
-import Pedicure from '../Services/ServicesPages/Pedicure'
-import About  from '../About/About';
-import Contacts  from '../Contacts/Contacts';
 import './Header.module.css'
 
 const Styles = styled.div`
@@ -45,10 +40,10 @@ export default class Header extends Component {
                     <Nav.Link> <Link to="/about" > О нас </Link> </Nav.Link>
                   </Nav>
                 <Nav class="btn btn-block btn-social btn-vk">
-                    <a href="#"><i class="fa fa-vk fa_custom " ></i></a>
+                    <a href="#s"><i class="fa fa-vk fa_custom " ></i></a>
                 </Nav>
                 <Nav class="btn btn-social-icon btn-instagram">  
-                    <a href="#"><i class="fa fa-instagram fa_custom " ></i></a>
+                    <a href="#s"><i class="fa fa-instagram fa_custom " ></i></a>
                 </Nav>
                 <Nav style={{paddingLeft: '2rem'}}>
                   <a class="btn btn-outline-secondary"href="/contacts" role="button">Контакты</a>
@@ -57,13 +52,6 @@ export default class Header extends Component {
             </Container>
           </Navbar>
         </Styles>
-        <Routes>
-          <Route exact path="/"  element={<Home/>} />
-          <Route exact path="/services" element={<Services/>} />
-          <Route exact path="/pedicure" element={<Pedicure/>} />
-          <Route exact path="/about" element={<About/>} />
-          <Route exact path="/contacts" element={<Contacts/>} />
-        </Routes>  
       </>
     );
   }

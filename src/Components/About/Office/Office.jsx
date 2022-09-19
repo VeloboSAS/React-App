@@ -29,8 +29,8 @@ const Office = () => {
             <>
                 <Container>
                     <h1 className={c.title}>Студия маникюра</h1>
-                    <Container style={{display: 'flex', textAlign: 'center', paddingLeft: '2rem', paddingTop: '4rem'}}>
-                        <p style={{fontSize: '1.5em',fontStyle: 'italic', color: '#D3D3D3'}}>
+                    <Container className={c.content}>
+                        <p style={{fontSize: '1.8em',fontStyle: 'italic', color: '#D3D3D3'}}> 
                             FS | Studio manicure- это новая студия маникюра, где ты получишь не только качественную услугу,
                             но и настоящий relax ❤
 

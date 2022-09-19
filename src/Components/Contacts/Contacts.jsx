@@ -20,11 +20,8 @@ class ContactMap extends Component {
                                 </p>
                                 <div style={{paddingTop: '2rem'}}>
                                     <div className={c.social.vk}>
-                                        <a href="#" target="_blank"><i class="fa fa-vk fa"></i></a>    
+                                        <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
                                     </div>
-                                    {/* <div className={c.social.instagram}>
-                                        <a href="#" target="_blank"><i class="fa fa-instagram fa"></i></a>
-                                    </div> */}
                                 </div>
                             </div>    
                         </Col>   

@@ -9,6 +9,7 @@
   -o-background-size: cover; 
   background-size: cover; 
   background-attachment: relative;
+  font-style: italic;
 }
 
 .App-logo {
